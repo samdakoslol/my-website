@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiddo world My Feelings | GameZone</title>
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-3967076964333670"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=g-etsbr2vgc1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ETSBR2VGC1');
+  </script>
+<meta name="description" content="Play Kiddo My Feelings for free on GameZone – a friendly educational game for toddlers to understand emotions like happy, sad, and brave with cute animations.">
+<meta name="keywords" content="Kiddo My Feelings, learn emotions for kids, feelings game for toddlers, social emotional learning, kids emoji game, educational games, GameZone">
+<meta name="author" content="GameZone Team">
+
+<meta property="og:title" content="GameZone - Kiddo My Feelings">
+<meta property="og:description" content="How are you today? Explore emotions with Kiddo My Feelings! A safe, animated, and supportive journey for toddlers. Play for free on GameZone.">
+<meta property="og:image" content="https://www.gamezonline.store/fullphoto/Kiddo-Feelings.webp">
+<meta property="og:url" content="https://www.gamezonline.store/Kiddo-Feelings.html">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <style>
+        /* General & Reusable Styles */
+        :root {
+            --primary-accent: #00e6e6;
+            --secondary-accent: #ff007f;
+            --text-light: #e0e0e0;
+            --text-dark: #333;
+            --bg-dark-primary: #121212;
+            --bg-dark-secondary: #1f1f1f;
+            --card-background: #2a2a2a;
+            --border-radius-lg: 12px;
+            --border-radius-sm: 6px;
+            --shadow-color-dark: rgba(0, 0, 0, 0.7);
+            --transition-fast: 0.2s ease-out;
+            --transition-medium: 0.3s ease-in-out;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all var(--transition-fast);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--bg-dark-primary) 0%, #0a0a0a 100%);
+            background-attachment: fixed;
+            color: var(--text-light);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Main Layout */
+        .main-content {
+            padding-top: 80px;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Middle Section with Content and Sidebar */
+        .middle-section-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        /* Main Content Area */
+        .main-content-area {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            overflow: hidden;
+        }
+
+        /* Game Details Section Styles */
+        .game-details-section {
+            background-color: var(--bg-dark-secondary);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 4px 8px var(--shadow-color-dark);
+            padding: 2rem;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .game-details-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 576px) {
+            .game-details-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .game-details-header-info h1 {
+                font-size: 2rem;
+            }
+        }
+        .game-details-header img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: var(--border-radius-lg);
+        }
+        .game-details-header-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .game-details-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-accent);
+            margin: 0;
+            word-wrap: break-word;
+        }
+        .rating {
+            font-size: 1rem;
+            color: #ccc;
+            margin-top: 0.5rem;
+        }
+        .rating .fas {
+            color: gold;
+        }
+        
+        /* Buttons Section */
+        .game-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .game-button {
+            padding: 1rem 2.5rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            max-width: 100%;
+        }
+        .game-button:hover {
+            transform: scale(1.05);
+        }
+        .game-button.play {
+            background-color: #4CAF50;
+        }
+        .game-button.premium {
+            background-color: #0066ff;
+        }
+        .game-button.donate {
+            background-color: #00cc66;
+            position: relative;
+        }
+        .donate-dropdown {
+  display: none;
+  position: absolute;
+  top: 110%; /* مسافة تحت الزر */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-dark-secondary); /* لون الخلفية */
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  padding: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px; /* باش ما تكونش صغيرة بزاف */
+}
+
+/* الروابط داخل القائمة */
+.donate-dropdown a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: var(--border-radius-sm);
+  transition: background-color var(--transition-fast);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.donate-dropdown a:hover {
+  background-color: var(--card-background);
+}
+
+.donate-dropdown a .fab {
+  font-size: 1.2rem;
+}
+
+/* 📱 التوافق مع الهاتف */
+@media (max-width: 600px) {
+  .donate-dropdown {
+    position: static;       /* تلغى absolute باش تبقى وسط الشاشة */
+    transform: none;        /* نلغي التوسيط الأفقي */
+    width: 100%;            /* تاخذ عرض الشاشة */
+    max-width: 95%;         /* ما تتجاوزش العرض */
+    margin: 10px auto;      /* وسط الصفحة */
+  }
+
+  .donate-dropdown a {
+    justify-content: center; /* الأيقونة والنص وسط */
+    font-size: 16px;
+  }
+}
+
+        .game-details-content h2 {
+            font-size: 1.8rem;
+            color: var(--text-light);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .game-details-content h3 {
+            font-size: 1.5rem;
+            color: var(--primary-accent);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .game-details-content ul {
+            list-style: none;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .game-details-content ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .game-details-content ul li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            color: var(--primary-accent);
+            position: absolute;
+            left: 0;
+        }
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .tag {
+            background-color: var(--card-background);
+            color: #ccc;
+            padding: 0.3rem 0.8rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+
+        /* Sidebar Section */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Sidebar Ad styles */
+        .sidebar-ad {
+            background-color: var(--bg-dark-secondary);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 4px 8px var(--shadow-color-dark);
+            text-align: center;
+            padding: 1rem;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+        }
+        
+        /* New AdSense Container Styles */
+        .adsense-container {
+            background-color: var(--bg-dark-secondary);
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 4px 8px var(--shadow-color-dark);
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150px;
+        }
+        
+        /* CPA Slide-in */
+        .cpa-slide {
+            position: fixed;
+            bottom: 20px;
+            right: -350px;
+            width: 300px;
+            background-color: #0066ff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            z-index: 2000;
+            text-align: center;
+            transition: right 0.5s ease;
+        }
+        .cpa-slide.active {
+            right: 20px;
+        }
+        
+        /* Small Game Cards (Sidebar Style - Grid Layout) */
+        .small-game-cards-section {
+            background-color: var(--bg-dark-secondary);
+            padding: 1rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: 0 4px 8px var(--shadow-color-dark);
+        }
+
+        .small-game-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.3rem;
+            padding-top: 0.5rem;
+        }
+
+        .small-game-card {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius-sm);
+            overflow: hidden;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3rem;
+            text-align: center;
+            color: var(--text-light);
+            min-height: 80px;
+        }
+
+        .small-game-card:hover {
+            transform: translateY(-1px) scale(1.03);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .small-game-card-image {
+            width: 50px;
+            height: 35px;
+            object-fit: cover;
+            display: block;
+            border-radius: var(--border-radius-sm);
+            margin-bottom: 0.2rem;
+        }
+
+        .small-game-card-title {
+            font-size: 0.7rem;
+            font-weight: normal;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Header Styles */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--bg-dark-primary);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            padding: 0.5rem 1rem;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+        .logo h1 { font-size: 1.8rem; margin: 0; }
+        .logo span { color: var(--primary-accent); }
+        .search-bar-container {
+            position: relative;
+            flex-grow: 1;
+            margin: 0 2rem;
+            max-width: 400px;
+        }
+        .search-input {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            padding-left: 2.5rem;
+            border: 1px solid var(--card-background);
+            background-color: var(--bg-dark-secondary);
+            color: var(--text-light);
+            border-radius: 50px;
+            outline: none;
+        }
+        .search-icon { position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: #888; }
+        .header-right { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+        .nav-links a { font-weight: 500; color: var(--text-light); text-decoration: none; }
+        .login-button {
+            background-color: var(--secondary-accent);
+            color: var(--text-light);
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        @media (max-width: 992px) {
+            .nav-links, .login-button, .search-bar-container { display: none; }
+            .hamburger-menu { display: block; }
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            max-width: 300px;
+            height: 100%;
+            background-color: var(--bg-dark-primary);
+            box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: right 0.3s ease-in-out;
+        }
+        .mobile-menu.active {
+            right: 0;
+        }
+        .mobile-menu .close-menu {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            cursor: pointer;
+        }
+        .mobile-menu nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .mobile-menu nav a {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.5rem;
+            display: block;
+            border-bottom: 1px solid var(--card-background);
+        }
+        .mobile-menu .login-button {
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        /* Footer Styles */
+        .site-footer {
+            background-color: var(--bg-dark-primary);
+            padding: 2.5rem 1rem 1rem;
+            color: var(--text-light);
+            text-align: center;
+            border-top: 1px solid var(--bg-dark-secondary);
+        }
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .footer-links a { color: var(--text-light); text-decoration: none; }
+        .footer-social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .footer-social-links a { font-size: 1.5rem; color: #888; }
+        .footer-bottom p { font-size: 0.875rem; color: #666; margin: 0; }
+
+        /* Go-to-top button */
+        #go-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--secondary-accent);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            display: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            z-index: 999;
+        }
+        #go-to-top.show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* New CSS to control the order on mobile */
+        @media (max-width: 992px) {
+            .middle-section-wrapper {
+                display: flex; /* Use flexbox to control order */
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .main-content-area {
+                order: 1; /* Game details come first on mobile */
+            }
+            .sidebar {
+                order: 2; /* Sidebar comes after the game details */
+            }
+        }
+    </style>
+
+    <style>
+        /* إعدادات عامة للهاتف */
+        * { box-sizing: border-box; }
+        body { margin: 0; padding: 10px; font-size: 16px; overflow-x: hidden; }
+        
+        /* جعل الحاوية مرنة */
+        .wrapper, .container { 
+            width: 100% !important; 
+            max-width: 100% !important; 
+            margin: 0 auto !important; 
+            padding: 10px !important; 
+        }
+
+        /* جعل الصور متجاوبة تماماً */
+        img, .main-img { 
+            max-width: 100% !important; 
+            height: auto !important; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+        /* الأزرار: جعلها سهلة اللمس في الهاتف */
+        .btn, button { 
+            display: block !important; 
+            width: 100% !important; 
+            padding: 15px !important; 
+            font-size: 18px !important; 
+            margin: 10px 0 !important; 
+        }
+
+        /* تعديل النصوص للشاشات الصغيرة */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.6rem !important; }
+            h2 { font-size: 1.3rem !important; }
+            p { font-size: 1rem !important; line-height: 1.6; }
+            .grid-container { grid-template-columns: 1fr !important; } /* إذا كان عندك شبكة صور */
+        }
+    </style>
+                
+
+<style>
+    /* جعل القائمة مرنة للهاتف */
+    nav, header { 
+        display: flex !important; 
+        flex-direction: column !important; 
+        align-items: center !important; 
+        gap: 15px !important; 
+    }
+    
+    @media (min-width: 768px) {
+        nav, header { flex-direction: row !important; }
+    }
+
+    /* منع خروج العناصر عن الشاشة */
+    * { box-sizing: border-box; }
+    body { overflow-x: hidden; width: 100%; margin: 0; padding: 0; }
+    .wrapper, .container { width: 100% !important; padding: 10px !important; }
+    img { max-width: 100% !important; height: auto !important; }
+</style>
+                
+</head>
+<body>
+
+<header class="main-header">
+    <div class="header-content container">
+        <div class="logo">
+            <h1>Game<span>zone</span></h1>
+        </div>
+        <div class="search-bar-container">
+            <input type="text" class="search-input" placeholder="Search for games...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="postblog/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <button class="login-button" aria-label="Login">
+                <i class="fas fa-user"></i> Login
+            </button>
+            <button class="hamburger-menu" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <button class="close-menu" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="logo">
+        <h1>Game<span>zone</span></h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="postblog/blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <button class="login-button" aria-label="Login">
+        <i class="fas fa-user"></i> Login
+    </button>
+</div>
+
+<main class="main-content container">
+    <section class="main-banner-section adsense-container">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-1234567890123456"
+             data-ad-slot="1234567890"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+
+    <div class="middle-section-wrapper">
+        <div class="main-content-area">
+            <section class="game-details-section">
+                <div class="game-details-header">
+                    <img src="fullphoto/kiddo-world-my-feelings.webp" alt="kidoo world">
+                    <div class="game-details-header-info">
+                        <h1>Kiddo world My Feelings</h1>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                            <span>3.6 (146 votes)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                                              <div class="game-buttons">
+    <!-- زر تشغيل اللعبة -->
+    <a href="/games/kidoo-felling/index.html" class="game-button play">Play Now</a>
+    
+    <!-- زر Premium لإزالة الإعلانات مقابل 2$ -->
+    <a href="https://paypal.me/mlachhab146/supportgamezone" target="_blank" class="game-button premium">
+        Remove Ads $2
+    </a>
+    
+    <!-- زر Donate -->
+    <button class="game-button donate" id="donate-btn">☕ Donate</button>
+    <div class="donate-dropdown" id="donate-options">
+        <!-- PayPal.Me link -->
+        <a href="https://paypal.me/mlachhab146/supportgamezone" target="_blank">
+            <i class="fab fa-paypal"></i> PayPal
+        </a>
+        <!-- Payoneer contact via email -->
+        <a href="mailto:mohamedbouflos@gmail.com" target="_blank">
+            <i class="fab fa-cc-paypal"></i> Payoneer
+        </a>
+        <!-- Short instructions in English -->
+        <p style="font-size:12px; margin-top:5px;">
+            To donate via Payoneer, click the button above to open your email, then send the desired amount to <strong>mohamedbouflos@gmail.com</strong> with any note you wish.
+          </p>
+       </div>     
+   </div>
+
+                <div class="game-details-content">
+                  <h2>About Kiddo My Feelings</h2>
+<p>How are you today? <strong>Kiddo My Feelings</strong> is a heartwarming and supportive educational game designed to help toddlers recognize and name their emotions. By exploring 150 different feelings and facial expressions, children develop empathy and emotional intelligence in a safe, animated, and fun environment.</p>
+
+<h3>Features</h3>
+<ul>
+    <li>Emotional Discovery: Learn about <strong>Happy, Sad, Angry, and Brave</strong> feelings through cute icons.</li>
+    <li>3 Mood Categories: Explore "Happy Vibes" 😊, "Gentle Hugs" 😢, and "Strong Feelings" 😡.</li>
+    <li>Expressive Animations: Icons zoom and vibrate to mimic real-life emotional energy and expressions.</li>
+    <li>100% Automatic Flow: Designed for independent play with seamless transitions after every 6 discoveries.</li>
+    <li>Child-Safe Design: Hardcoded privacy policy and no data collection for a 100% safe experience.</li>
+</ul>
+
+<h3>Gameplay</h3>
+<p>In <strong>Kiddo My Feelings</strong>, children embark on a journey of self-awareness. The game presents 6 emotion icons at a time in a vertical list. Once a child interacts with them, a joyful confetti celebration appears, and the game automatically moves to the next set of feelings. It is the perfect tool for parents to start conversations about emotions.</p>
+
+<h3>How to Play</h3>
+<p>Simply tap or click on the animated emoji icons to see them move and learn their names. Collect all 36 stars as you progress through the entire collection of 150 emotional states. No manual buttons are needed—the learning journey is fully automatic!</p>
+
+<h3>Tips and Tricks</h3>
+<ul>
+    <li>Ask your child: "Which emoji feels like you right now?" to encourage expression.</li>
+    <li>The automatic transitions give children enough time to process each emotion and its name.</li>
+    <li>Use the "Share" button to help other parents find tools for emotional learning.</li>
+    <li>The "Zoom" animations are a great way to talk about how some feelings can feel "big" or "small."</li>
+    <li>Optimized for vertical play, making it easy for toddlers to use on mobile phones and tablets.</li>
+</ul>
+
+                      
+
+                </div>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-ad">
+                <ins class="adsbygoogle"
+                     style="display:block;"
+                     data-ad-client="ca-pub-1234567890123456"
+                     data-ad-slot="1234567890"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+            <section class="small-game-cards-section">
+                <div class="section-header">
+                    <h2>Quick Play</h2>
+                </div>
+                <div class="small-game-cards-grid">
+                    <a href="d1.html" class="small-game-card"> 
+                        <img src="images/awesome-4x-.webp" alt="Awesome 4x4 Slider" class="small-game-card-image">
+                        <span class="small-game-card-title">Awesome 4x4 Slider</span>
+                    </a>
+                    <a href="game-2.html" class="small-game-card">
+                        <img src="images/driving-test-simulator-.webp" alt="Driving Test Simulator" class="small-game-card-image">
+                        <span class="small-game-card-title">Driving Test Simulator</span>
+                    </a>
+                    <a href="d2.html" class="small-game-card">
+                        <img src="images/axel-dungeon-.webp" alt="Axel Dungeon" class="small-game-card-image">
+                        <span class="small-game-card-title">Axel Dungeon</span>
+                    </a>
+                    <a href="io3.html" class="small-game-card">
+                        <img src="images/droid-o.webp" alt="Droid-O" class="small-game-card-image">
+                        <span class="small-game-card-title">Droid-O</span>
+                    </a>
+                    <a href="io4.html" class="small-game-card">
+                       <img src="images/drop-n-merge.webp" alt="Drop N Merge" class="small-game-card-image">
+                       <span class="small-game-card-title">Drop N Merge</span>
+                    </a>
+                    <a href="io5.html" class="small-game-card">
+                       <img src="images/dynamons.webp" alt="Dynamons" class="small-game-card-image">
+                       <span class="small-game-card-title">Dynamons</span>
+                    </a>
+                    <a href="io6.html" class="small-game-card">
+                        <img src="images/eco-inc--save-the-earth-planel.webp" alt="Eco Inc" class="small-game-card-image">
+                        <span class="small-game-card-title">Eco Inc</span>
+                    </a>
+                    <a href="io7.html" class="small-game-card">
+                        <img src="images/egg-wars-egg-wars-.webp" alt="Egg Wars" class="small-game-card-image">
+                        <span class="small-game-card-title">Egg Wars</span>
+                    </a>
+                    <a href="io20.html" class="small-game-card">
+                        <img src="images/climate-activist_small.webp" alt="Climate Activist" class="small-game-card-image">
+                        <span class="small-game-card-title">Climate Activist</span>
+                    </a>
+                </div>
+            </section>
+            <div class="sidebar-ad">
+                <ins class="adsbygoogle"
+                     style="display:block;"
+                     data-ad-client="ca-pub-1234567890123456"
+                     data-ad-slot="1234567890"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </aside>
+    </div>
+
+    <section class="main-banner-section adsense-container">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-1234567890123456"
+             data-ad-slot="1234567890"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-links-container">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li> 
+                <a href="pages/about-us.html">About Us</a>
+                <a href="pages/privacy-policy.html">Privacy Policy</a>
+                <a href="pages/terms-of-use.html">Terms & Conditions</a>   
+                <a href="pages/contact-us.html">Contact Us</a>
+                <li><a href="postblog/blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-social-links">
+            <a href="https://www.tiktok.com/@michealjohnson5262"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@gamezoneonline-s2e"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61579647232254"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/gamezoonnee"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Gamezone. All rights reserved.</p>
+    </div>
+</footer>
+
+<button id="go-to-top" aria-label="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<div class="cpa-slide" id="cpa-slide">
+    <strong>Try New Game!</strong><br>
+    <a href="https://offer1.com/?affid=12345" target="_blank">Game Offer 1</a><br>
+    <a href="https://offer2.com/?affid=12345" target="_blank">Game Offer 2</a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburgerMenuBtn = document.querySelector('.hamburger-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const closeMenuBtn = document.querySelector('.close-menu');
+        const goToTopBtn = document.getElementById('go-to-top');
+        const donateBtn = document.getElementById('donate-btn');
+        const donateOptions = document.getElementById('donate-options');
+        const cpaSlide = document.getElementById('cpa-slide');
+
+        // Toggle mobile menu
+        if (hamburgerMenuBtn && mobileMenu && closeMenuBtn) {
+            hamburgerMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            closeMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+        
+        // Go-to-top button functionality
+        if (goToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    goToTopBtn.classList.add('show');
+                } else {
+                    goToTopBtn.classList.remove('show');
+                }
+            });
+            goToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Donate dropdown toggle
+        if (donateBtn) {
+            donateBtn.addEventListener('click', () => {
+                donateOptions.style.display = donateOptions.style.display === "flex" ? "none" : "flex";
+            });
+        }
+        
+        // CPA Slide-in animation after 30s
+        setTimeout(() => {
+            if (cpaSlide) {
+                cpaSlide.classList.add('active');
+            }
+        }, 30000);
+    });
+</script>
+
+</body>
+</html>

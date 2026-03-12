@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yourdomain.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post1.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post2.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post3.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post4.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post5.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post6.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post7.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post8.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post9.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post10.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post11.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post12.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post13.html</loc><priority>0.8</priority></url>
+  <url><loc>https://yourdomain.com/postblog/post14.html</loc><priority>0.8</priority></url>
+</urlset>

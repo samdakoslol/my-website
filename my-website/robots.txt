@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /$
+Allow: /games/
+Allow: /blog.html
+Allow: /post*.html
+Allow: /about-us.html
+Allow: /contact-us.html
+
+Disallow: /login.html
+Disallow: /register.html
+Disallow: /user-profile.html
+Disallow: /privacy-policy.html
+Disallow: /terms-conditions.html
+Disallow: /terms-of-use.html
+Disallow: /moregames*.html
+
+Sitemap: https://gamezonline.store/sitemap.xml
+
